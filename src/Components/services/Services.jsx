@@ -96,10 +96,10 @@ const Services = () => {
     return (
         <div className='mt-14 mb-12'>
             {/* Header section */}
-            <div className='text-center mb-10 max-w-[600px] mx-auto'>
-                <p className='text-sm text-primary'>Most Demanding Coffees</p>
-                <h1 className='text-3xl font-bold'>Coffees</h1>
-                <p className='text-xs text-gray-400'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, molestiae.</p>
+            <div  className='text-center mb-10 max-w-[600px] mx-auto'>
+                <p data-aos="fade-up" className='text-sm text-primary'>Most Demanding Coffees</p>
+                <h1  data-aos="fade-up"className='text-3xl font-bold'>Coffees</h1>
+                <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, molestiae.</p>
             </div>
 
             {/* Body section */}
@@ -134,7 +134,7 @@ const Services = () => {
                 
                 {/* View all product button */}
                 <div className='flex justify-center'>
-                    <button className='mt-10 bg-primary cursor-pointer text-white py-2 rounded-md'>
+                    <button className='mt-10 bg-primary cursor-pointer text-white py-2 px-2 rounded-md'>
                         View all Button
                     </button>
                 </div>

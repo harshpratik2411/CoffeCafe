@@ -5,7 +5,8 @@ import 'aos/dist/aos.css';  // Import AOS CSS globally
 import Services from './Components/services/Services'
 import WhereToBuy from './Components/WhereToBuy/WhereToBuy';
 import Footer from './Components/Footer/Footer'; 
-import Navbar from './Components/Navbar/Navbar';
+import Navbar from './Components/Navbar/Navbar'; 
+import Banner from './Components/Banner/Banner';
 
 const App = () => {
   useEffect(() => {
@@ -17,9 +18,10 @@ const App = () => {
 
   return (
     <div> 
-      <Navbar/>
+      <Navbar/> 
       <Hero />  
-      <Services/> 
+      <Services/>  
+      <Banner/>
       <WhereToBuy/> 
       <Footer/>
     </div>
