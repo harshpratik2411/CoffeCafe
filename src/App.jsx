@@ -1,12 +1,23 @@
-import React from 'react'
-import Hero from './Components/Hero/Hero'
+import React, { useEffect } from 'react';
+import Hero from './Components/Hero/Hero';
+import AOS from 'aos';  // Import AOS
+import 'aos/dist/aos.css';  // Import AOS CSS globally 
+import Services from './Components/services/Services'
 
 const App = () => {
-  return ( 
-    <div className=''>
-      <Hero />
-    </div> 
-  )
-}
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Set the animation duration
+      delay: 200, // Set the animation delay
+    });
+  }, []);
 
-export default App
+  return (
+    <div>
+      <Hero />  
+      <Services/>
+    </div>
+  );
+};
+
+export default App;
