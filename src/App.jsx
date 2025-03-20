@@ -3,6 +3,7 @@ import Hero from './Components/Hero/Hero';
 import AOS from 'aos';  // Import AOS
 import 'aos/dist/aos.css';  // Import AOS CSS globally 
 import Services from './Components/services/Services'
+import WhereToBuy from './Components/WhereToBuy/WhereToBuy';
 
 const App = () => {
   useEffect(() => {
@@ -15,7 +16,8 @@ const App = () => {
   return (
     <div>
       <Hero />  
-      <Services/>
+      <Services/> 
+      <WhereToBuy/>
     </div>
   );
 };

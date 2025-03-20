@@ -80,7 +80,15 @@ const ProductsData = [
       rating: 4.0,
       color: "brown",
       aosDelay: "400"
-  },
+  }, 
+  {
+      id: 6,
+      img: card4,  // Correct image import
+      title: "Macchiato Dream",
+      rating: 4.4,
+      color: "yellow",
+      aosDelay: "600"
+  }, 
     
 ];
 
