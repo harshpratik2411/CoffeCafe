@@ -94,7 +94,7 @@ const WhereToBuy = () => {
           className="w-[400px] h-[300px] md:w-[600px] md:h-[400px] bg-slate-100 rounded-lg shadow-xl hover:scale-105 transform transition duration-300 ease-in-out"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 1.5, delay: 0.7 }}
+          transition={{ duration: 1.5, delay: 1 }}
         />
       </div>
 
