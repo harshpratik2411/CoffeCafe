@@ -6,7 +6,8 @@ import Services from './Components/services/Services'
 import WhereToBuy from './Components/WhereToBuy/WhereToBuy';
 import Footer from './Components/Footer/Footer'; 
 import Navbar from './Components/Navbar/Navbar'; 
-import Banner from './Components/Banner/Banner';
+import Banner from './Components/Banner/Banner'; 
+import Banner2 from './Components/Banner/Banner2';
 
 const App = () => {
   useEffect(() => {
@@ -21,7 +22,8 @@ const App = () => {
       <Navbar/> 
       <Hero />  
       <Services/>  
-      <Banner/>
+      <Banner/> 
+      <Banner2/>
       <WhereToBuy/> 
       <Footer/>
     </div>

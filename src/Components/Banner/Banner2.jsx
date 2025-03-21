@@ -34,24 +34,14 @@ const Banner = () => {
   return (  
     <div data-aos="fade-up" className="flex items-center justify-center py-12">
       <div className="w-full sm:w-4/5 flex items-center justify-between space-x-6">
-        {/* Text Section */}
-        <div data-aos="fade-up"  className="w-1/2 text-center sm:text-left">
-          <h1 className='text-5xl  text-primary font-bold leading-tight mb-2'>60% Discount</h1>
-          <p className="text-xl font-serif  text-gray-600 mb-4">
-          Coffee isn't just a drink—it's an experience that awakens the senses. Whether you savor it black, with a splash of milk, or as a frothy cappuccino, coffee offers a diverse range of flavors to explore. It's the perfect companion for early mornings or late-night study sessions, giving you a boost of energy and clarity. Each cup holds a story, a ritual that transforms an ordinary moment into something extraordinary. Take a sip, take a breath, and enjoy the comfort in every drop. </p>
-
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold text-xl transition duration-300 transform hover:scale-105">
-         Order now
-          </button>
-        </div>
         
-        {/* Image Carousel */}
-        <div className="w-[700px] bg-lightOrange p-4 rounded-lg">
+        {/* Image Carousel Section */}
+        <div className="w-[700px] bg-lightOrange p-4 rounded-lg shadow-lg">
           <Slider {...settings}>
             {BannerList.map((banner) => (
               <div key={banner.id} className="relative">
                 {/* Banner Image Container (Box) */}
-                <div className="w-full h-[600px] sm:h-[500px] overflow-hidden relative">
+                <div className="w-full h-[600px] sm:h-[500px] overflow-hidden relative rounded-lg">
                   {/* Banner Image */}
                   <img
                     src={banner.img} 
@@ -59,13 +49,31 @@ const Banner = () => {
                     className="w-full h-full object-cover transition-transform duration-700 ease-in-out"
                   />
                   {/* Title Overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-opacity-50 text-white p-4 text-center">
-                    <h3 className="text-3xl font-bold">{banner.title}</h3>
+                  <div className="absolute bottom-0 left-0 right-0 bg-opacity-50 text-white p-6 text-center rounded-b-lg">
+                    <h3 className="text-3xl font-bold tracking-wider">{banner.title}</h3>
                   </div>
                 </div>
               </div>
             ))}
           </Slider>
+        </div>
+
+        {/* Text Section */}
+        <div data-aos="fade-up" className="w-1/2 text-center sm:text-left px-6">
+          <h1 className='text-5xl font-bold text-primary mb-4 leading-tight'>
+            60% Discount
+          </h1>
+          <p className="text-lg font-serif text-gray-800 mb-6">
+            Coffee is more than just a morning pick-me-up; it's a ritual that energizes
+            and connects people. Whether you enjoy a bold espresso, a creamy latte, or a
+            frothy cappuccino, each cup offers a unique experience. Packed with antioxidants
+            and natural stimulants, coffee can enhance focus, improve mood, and boost your
+            energy levels throughout the day. Embrace your favorite brew and savor the moment!
+          </p>
+
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold text-xl transition duration-300 transform hover:scale-105">
+         Order now
+          </button>
         </div>
       </div>
     </div>
@@ -79,8 +87,8 @@ const SectioBanner = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
           {/* Left side text section */}
           <div className="w-full sm:w-full text-center sm:text-left px-4">
-            <h2 className="text-3xl font-semibold mb-4">Special Offers and Discounts</h2>
-            <button className="bg-blue-500 text-white px-6 py-2 rounded-md">Shop Now</button>
+            <h2 className="text-3xl font-semibold mb-4 text-gray-800">Special Offers and Discounts</h2>
+            <button className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Shop Now</button>
           </div>
         </div>
       </div>
