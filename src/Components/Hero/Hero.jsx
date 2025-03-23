@@ -25,12 +25,12 @@ const Hero = () => {
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
-    <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${HeroImage})` }}>
+    <div className="relative w-full  h-screen bg-cover bg-center" style={{ backgroundImage: `url(${HeroImage})` }}>
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-40"></div>
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white px-6">
         {/* Hero Title */}
         <h1 
-          className="text-6xl mb-4 sm:text-2xl md:text-4xl font-bold leading-tight text-lightOrange cursor-pointer tracking-wide text-shadow-md"
+          className="text-6xl mb-4 mt-16 sm:text-2xl md:text-4xl font-bold leading-tight text-lightOrange cursor-pointer tracking-wide text-shadow-md"
           data-aos="fade-up"
         >
           Black Tumbler
