@@ -33,7 +33,7 @@ const Snacks = () => {
   };
 
   const placeOrder = () => {
-    setOrderPlaced(true); // Set order placed to true
+    setOrderPlaced(true); 
     setCart([]); // Clear the cart after order is placed
   };
 

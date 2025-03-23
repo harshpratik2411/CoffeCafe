@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link to="/coffees" className="hover:text-lightOrange transition-colors duration-300">Coffees</Link>
             <Link to="/snacks" className="hover:text-lightOrange transition-colors duration-300">Snacks</Link>
             <Link to="/flavours" className="hover:text-lightOrange transition-colors duration-300">Flavours</Link>
-            <Link to="/about-us" className="hover:text-lightOrange transition-colors duration-300">About us</Link>
+            <Link to="/aboutus" className="hover:text-lightOrange transition-colors duration-300">About us</Link>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -51,8 +51,8 @@ const Navbar = () => {
           <Link to="/" className="hover:text-lightOranger hover:scale-110 text-xl transition-colors duration-300">Home</Link>
           <Link to="/coffees" className="hover:text-lightOrange  transform hover:scale-110 text-xl transition-colors duration-300">Coffees</Link>
           <Link to="/snacks" className="hover:text-lightOrange  transform hover:scale-110 text-xl transition-colors duration-300">Snacks</Link>
+          <Link to="/aboutus" className="hover:text-lightOrange  transform hover:scale-110 text-xl transition-colors duration-300">About us</Link>
           <Link to="/flavours" className="hover:text-lightOrange transform hover:scale-110 text-xl transition-colors duration-300">Flavours</Link>
-          <Link to="/about-us" className="hover:text-lightOrange  transform hover:scale-110 text-xl transition-colors duration-300">About us</Link>
         </div>
       </motion.div>
     </nav>
