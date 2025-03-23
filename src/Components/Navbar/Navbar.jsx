@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen(!isMobileMenuOpen); 
   };
 
   return (
@@ -22,7 +22,9 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <Link to="/" className="hover:text-lightOrange">Home</Link>
+         
+  
+         <Link to="/" className="hover:text-lightOrange active:" >Home</Link> 
             <Link to="/coffees" className="hover:text-lightOrange">Coffees</Link>
             <Link to="/snacks" className="hover:text-lightOrange">Snacks</Link>
             <Link to="/flavours" className="hover:text-lightOrange">Flavours</Link>
