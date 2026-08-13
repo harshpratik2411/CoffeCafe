@@ -4,7 +4,7 @@ import card1 from '../../assets/Card/card1.jpg';
 import card2 from '../../assets/Card/card2.jpg';
 import card3 from '../../assets/Card/card3.jpg';
 import card4 from '../../assets/Card/card4.jpg';
-import { FaStar } from 'react-icons/fa';
+import { Star } from 'lucide-react';
 
 const ProductsData = [
     {
@@ -118,11 +118,11 @@ const Services = () => {
                                 <h3 className="font-bold">{data.title}</h3>
                                 <p className='text-sm text-gray-600'>{data.color}</p> 
                                 <div className="flex justify-center mt-2">
-                                    <FaStar className="text-yellow-500" />
-                                    <FaStar className="text-yellow-500" />
-                                    <FaStar className="text-yellow-500" />
-                                    <FaStar className="text-yellow-500" />
-                                    <FaStar className="text-gray-300" />
+                                    <Star className="text-yellow-500" />
+                                    <Star className="text-yellow-500" />
+                                    <Star className="text-yellow-500" />
+                                    <Star className="text-yellow-500" />
+                                    <Star className="text-gray-300" />
                                 </div>
                                 <div className="flex justify-center items-center gap-1">
                                     <span>{data.rating}</span>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'; 
 import HeroImage from '../../assets/Hero.jpg'; 
 import CoffeImage from '../../assets/coffeCup.png';  
-import { IoMenu } from "react-icons/io5";
+import { Menu } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
@@ -72,7 +72,7 @@ const Hero = () => {
             onClick={toggleDropdown}
             className="bg-white text-black px-4 py-2 mr-2 mb-2 rounded-full font-semibold text-lg transition duration-300"
           >  
-            <IoMenu className='text-2xl'/>
+            <Menu className='text-2xl'/>
           </button>
           {isOpen && (
             <div className="absolute bg-white text-black rounded-md shadow-lg mt-2 p-4 transform transition-transform duration-300 ease-in-out hover:scale-110">

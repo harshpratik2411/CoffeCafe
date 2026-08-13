@@ -1,8 +1,6 @@
 import React from 'react';
 import Footerlogo from '../../assets/Foot.jpg'; // Ensure path is correct
-import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMobileAlt, FaGithub, FaApple } from 'react-icons/fa';
-import { FaCcVisa, FaCcMastercard, FaCcPaypal } from 'react-icons/fa'; // Add payment methods icons
-import { FaGooglePlay, FaAppStore } from 'react-icons/fa'; // Add App Store and Google Play icons
+import { Facebook, Instagram, Linkedin, MapPin, Smartphone, Github, Apple, CreditCard, DownloadCloud, Download } from 'lucide-react';
 
 // Inline style for the footer background
 const BannerImg = {
@@ -59,29 +57,29 @@ const Footer = () => {
             {/* Social Media Links */}
             <div className="flex gap-6 justify-center md:justify-start">
               <a href="https://www.instagram.com" className="text-4xl text-[#f02e6f] hover:text-[#db2476] duration-300">
-                <FaInstagram />
+                <Instagram />
               </a>
               <a href="https://www.facebook.com" className="text-4xl text-[#1d559f] hover:text-[#0a4287] duration-300">
-                <FaFacebook />
+                <Facebook />
               </a>
               <a href="https://www.linkedin.com" className="text-4xl text-[#36a7e4] hover:text-[#2a90c8] duration-300">
-                <FaLinkedin />
+                <Linkedin />
               </a>
               <a href="https://github.com" className="text-4xl text-black hover:text-[#333] duration-300">
-                <FaGithub />
+                <Github />
               </a>
               <a href="https://www.apple.com" className="text-4xl text-[#A2AAAD] hover:text-[#8f9599] duration-300">
-                <FaApple />
+                <Apple />
               </a>
             </div>
 
             {/* Location & Contact Info */}
             <div className="flex items-center justify-center md:justify-start gap-2 text-white">
-              <FaLocationArrow className="text-2xl" />
+              <MapPin className="text-2xl" />
               <p>Varanasi, Uttar Pradesh</p>
             </div>
             <div className="flex items-center justify-center md:justify-start gap-2 text-white">
-              <FaMobileAlt className="text-2xl" />
+              <Smartphone className="text-2xl" />
               <p>+91 1234567890</p>
             </div>
           </div>
@@ -89,19 +87,19 @@ const Footer = () => {
 
         {/* Payment Methods Section */}
         <div data-aos="fade-up" data-aos-duration="3000" className="flex justify-center gap-8 mt-12">
-          <FaCcVisa className="text-3xl text-white hover:text-[#005cbf] duration-300" />
-          <FaCcMastercard className="text-3xl text-white hover:text-[#d23434] duration-300" />
-          <FaCcPaypal className="text-3xl text-white hover:text-[#003b6b] duration-300" />
+          <CreditCard className="text-3xl text-white hover:text-[#005cbf] duration-300" />
+          <CreditCard className="text-3xl text-white hover:text-[#d23434] duration-300" />
+          <CreditCard className="text-3xl text-white hover:text-[#003b6b] duration-300" />
         </div>
 
         {/* App Download Links Section */}
         <div data-aos="fade-up" data-aos-duration="3500" className="mt-12 flex justify-center gap-8">
           <a href="https://apps.apple.com/us/app" className="text-white mx-4 text-xl flex items-center justify-center hover:text-[#279eff] duration-300">
-            <FaAppStore className="mr-2 text-[#279eff] text-4xl" />
+            <DownloadCloud className="mr-2 text-[#279eff] text-4xl" />
             Download from <span className="font-bold">App Store</span>
           </a>
           <a href="https://play.google.com/store" className="text-white mx-4 text-xl flex items-center justify-center hover:text-[#2cd659] duration-300">
-            <FaGooglePlay className="mr-2 text-[#2cd659] text-4xl" />
+            <Download className="mr-2 text-[#2cd659] text-4xl" />
             Get it on <span className="font-bold">Google Play</span>
           </a>
         </div>

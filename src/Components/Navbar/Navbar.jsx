@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom'; // Import Link
 import { motion } from 'framer-motion'; // Import motion from framer-motion
 
@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* Mobile Menu Icon */}
           <div className="md:hidden flex items-center">
             <button onClick={toggleMobileMenu} className="text-3xl text-lightOrange transition-transform duration-300 hover:scale-110">
-              {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+              {isMobileMenuOpen ? <X /> : <Menu />}
             </button>
           </div>
         </div>
